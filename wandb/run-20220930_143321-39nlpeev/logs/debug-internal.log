@@ -1,0 +1,45 @@
+2022-09-30 14:33:21,790 INFO    StreamThr :19548 [internal.py:wandb_internal():90] W&B internal server running at pid: 19548, started at: 2022-09-30 14:33:21.789831
+2022-09-30 14:33:21,795 DEBUG   HandlerThread:19548 [handler.py:handle_request():141] handle_request: status
+2022-09-30 14:33:21,796 DEBUG   SenderThread:19548 [sender.py:send_request():249] send_request: status
+2022-09-30 14:33:21,799 INFO    WriterThread:19548 [datastore.py:open_for_write():75] open: /home/notebooks/wandb/run-20220930_143321-39nlpeev/run-39nlpeev.wandb
+2022-09-30 14:33:21,799 DEBUG   SenderThread:19548 [sender.py:send():235] send: header
+2022-09-30 14:33:21,799 DEBUG   SenderThread:19548 [sender.py:send():235] send: run
+2022-09-30 14:33:21,827 INFO    SenderThread:19548 [sender.py:_maybe_setup_resume():492] checking resume status for None/2017125074_허진석_pytorch lightning Cifar10/39nlpeev
+2022-09-30 14:33:22,281 DEBUG   HandlerThread:19548 [handler.py:handle_request():141] handle_request: check_version
+2022-09-30 14:33:22,287 INFO    SenderThread:19548 [dir_watcher.py:__init__():205] watching files in: /home/notebooks/wandb/run-20220930_143321-39nlpeev/files
+2022-09-30 14:33:22,288 INFO    SenderThread:19548 [sender.py:_start_run_threads():812] run started: 39nlpeev with start time 1664541201
+2022-09-30 14:33:22,288 DEBUG   SenderThread:19548 [sender.py:send():235] send: summary
+2022-09-30 14:33:22,288 INFO    SenderThread:19548 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-09-30 14:33:22,289 DEBUG   SenderThread:19548 [sender.py:send_request():249] send_request: check_version
+2022-09-30 14:33:22,332 DEBUG   HandlerThread:19548 [handler.py:handle_request():141] handle_request: run_start
+2022-09-30 14:33:22,333 DEBUG   HandlerThread:19548 [meta.py:__init__():35] meta init
+2022-09-30 14:33:22,334 DEBUG   HandlerThread:19548 [meta.py:__init__():49] meta init done
+2022-09-30 14:33:22,334 DEBUG   HandlerThread:19548 [meta.py:probe():209] probe
+2022-09-30 14:33:22,335 DEBUG   HandlerThread:19548 [git.py:repo():29] git repository is invalid
+2022-09-30 14:33:22,335 DEBUG   HandlerThread:19548 [meta.py:_save_pip():53] save pip
+2022-09-30 14:33:22,336 DEBUG   HandlerThread:19548 [meta.py:_save_pip():67] save pip done
+2022-09-30 14:33:22,337 DEBUG   HandlerThread:19548 [meta.py:probe():247] probe done
+2022-09-30 14:33:22,450 DEBUG   SenderThread:19548 [sender.py:send():235] send: files
+2022-09-30 14:33:22,451 INFO    SenderThread:19548 [sender.py:_save_file():949] saving file wandb-metadata.json with policy now
+2022-09-30 14:33:22,459 DEBUG   HandlerThread:19548 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-30 14:33:22,459 DEBUG   SenderThread:19548 [sender.py:send_request():249] send_request: stop_status
+2022-09-30 14:33:22,670 DEBUG   SenderThread:19548 [sender.py:send():235] send: telemetry
+2022-09-30 14:33:22,670 DEBUG   SenderThread:19548 [sender.py:send():235] send: metric
+2022-09-30 14:33:22,671 DEBUG   SenderThread:19548 [sender.py:send():235] send: telemetry
+2022-09-30 14:33:22,671 DEBUG   SenderThread:19548 [sender.py:send():235] send: metric
+2022-09-30 14:33:22,671 WARNING SenderThread:19548 [sender.py:send_metric():905] Seen metric with glob (shouldn't happen)
+2022-09-30 14:33:22,949 DEBUG   SenderThread:19548 [sender.py:send():235] send: config
+2022-09-30 14:33:23,098 INFO    Thread-22 :19548 [upload_job.py:push():132] Uploaded file /tmp/tmpy_7sn6zvwandb/3df6u64z-wandb-metadata.json
+2022-09-30 14:33:23,291 INFO    Thread-18 :19548 [dir_watcher.py:_on_file_created():256] file/dir created: /home/notebooks/wandb/run-20220930_143321-39nlpeev/files/requirements.txt
+2022-09-30 14:33:23,291 INFO    Thread-18 :19548 [dir_watcher.py:_on_file_created():256] file/dir created: /home/notebooks/wandb/run-20220930_143321-39nlpeev/files/wandb-metadata.json
+2022-09-30 14:33:23,291 INFO    Thread-18 :19548 [dir_watcher.py:_on_file_created():256] file/dir created: /home/notebooks/wandb/run-20220930_143321-39nlpeev/files/wandb-summary.json
+2022-09-30 14:33:23,291 INFO    Thread-18 :19548 [dir_watcher.py:_on_file_created():256] file/dir created: /home/notebooks/wandb/run-20220930_143321-39nlpeev/files/output.log
+2022-09-30 14:33:25,289 INFO    Thread-18 :19548 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/notebooks/wandb/run-20220930_143321-39nlpeev/files/output.log
+2022-09-30 14:33:37,673 DEBUG   HandlerThread:19548 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-30 14:33:37,673 DEBUG   SenderThread:19548 [sender.py:send_request():249] send_request: stop_status
+2022-09-30 14:33:50,389 DEBUG   SenderThread:19548 [sender.py:send():235] send: stats
+2022-09-30 14:33:52,877 DEBUG   HandlerThread:19548 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-30 14:33:52,877 DEBUG   SenderThread:19548 [sender.py:send_request():249] send_request: stop_status
+2022-09-30 14:33:53,298 INFO    Thread-18 :19548 [dir_watcher.py:_on_file_modified():269] file/dir modified: /home/notebooks/wandb/run-20220930_143321-39nlpeev/files/config.yaml
+2022-09-30 14:34:08,141 DEBUG   HandlerThread:19548 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-30 14:34:08,141 DEBUG   SenderThread:19548 [sender.py:send_request():249] send_request: stop_status

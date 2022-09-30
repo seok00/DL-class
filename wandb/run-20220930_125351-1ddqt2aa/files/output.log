@@ -1,0 +1,82 @@
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:445: LightningDeprecationWarning: Setting `Trainer(gpus=0)` is deprecated in v1.7 and will be removed in v2.0. Please use `Trainer(accelerator='gpu', devices=0)` instead.
+  rank_zero_deprecation(
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/callbacks/model_checkpoint.py:616: UserWarning: Checkpoint directory /home/notebooks/checkpoints/{epoch:d} exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+  | Name  | Type       | Params
+-------------------------------------
+0 | model | Sequential | 55.3 K
+-------------------------------------
+55.3 K    Trainable params
+0         Non-trainable params
+55.3 K    Total params
+0.221     Total estimated model params size (MB)
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/trainer/connectors/data_connector.py:219: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/trainer/connectors/data_connector.py:219: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+
+
+
+
+
+Epoch 0:  92%|██████████████████████████████████████████████████████████████████████████████████████████████████▉         | 1719/1876 [00:13<00:01, 128.85it/s, loss=0.207, v_num=t2aa]
+Validation DataLoader 0:   0%|                                                                                                                                 | 0/157 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+Epoch 1:  91%|██████████████████████████████████████████████████████████████████████████████████████████████████▎         | 1707/1876 [00:13<00:01, 130.30it/s, loss=0.124, v_num=t2aa]
+
+
+
+
+
+
+
+Epoch 2:  90%|████████████████████████████████████████████████████████████████████████████████████████████████▊           | 1681/1876 [00:13<00:01, 126.32it/s, loss=0.096, v_num=t2aa]
+
+
+
+
+
+
+Epoch 3:  93%|███████████████████████████████████████████████████████████████████████████████████████████████████        | 1736/1876 [00:13<00:01, 132.64it/s, loss=0.0683, v_num=t2aa]
+Validation DataLoader 0:  17%|████████████████████▍                                                                                                  | 27/157 [00:00<00:00, 268.17it/s]
+
+
+
+
+
+
+Epoch 4:  92%|██████████████████████████████████████████████████████████████████████████████████████████████████▉         | 1719/1876 [00:13<00:01, 129.53it/s, loss=0.051, v_num=t2aa]
+Validation DataLoader 0:   0%|                                                                                                                                 | 0/157 [00:00<?, ?it/s]
+
+
+
+
+
+
+Epoch 5:  92%|██████████████████████████████████████████████████████████████████████████████████████████████████         | 1719/1876 [00:13<00:01, 130.37it/s, loss=0.0434, v_num=t2aa]
+Validation DataLoader 0:   0%|                                                                                                                                 | 0/157 [00:00<?, ?it/s]
+Epoch 5, global step 10314: 'val_acc' reached 0.97000 (best 0.97000), saving model to '/home/notebooks/checkpoints/{epoch:d}/epoch=5-step=10314.ckpt' as top 5
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/trainer/trainer.py:657: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...
+  rank_zero_warn("Detected KeyboardInterrupt, attempting graceful shutdown...")
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/trainer/trainer.py:1385: UserWarning: `.test(ckpt_path=None)` was called without a model. The best model of the previous `fit` call will be used. You can pass `.test(ckpt_path='best')` to use the best model or `.test(ckpt_path='last')` to use the last model. If you pass a value, this warning will be silenced.
+  rank_zero_warn(
+Restoring states from the checkpoint path at /home/notebooks/checkpoints/{epoch:d}/epoch=5-step=10314.ckpt
+Loaded model weights from checkpoint at /home/notebooks/checkpoints/{epoch:d}/epoch=5-step=10314.ckpt
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/trainer/connectors/data_connector.py:219: PossibleUserWarning: The dataloader, test_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+Testing DataLoader 0: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 313/313 [00:01<00:00, 217.94it/s]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃[1m        Test metric        [22m┃[1m       DataLoader 0        [22m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│[36m         test_acc          [39m│[35m    0.9728000164031982     [39m│
+│[36m         test_loss         [39m│[35m    0.09576789289712906    [39m│

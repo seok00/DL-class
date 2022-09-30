@@ -1,0 +1,16 @@
+{
+    "os": "Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+    "python": "3.9.13",
+    "heartbeatAt": "2022-09-30T12:33:22.334505",
+    "startedAt": "2022-09-30T12:33:21.775561",
+    "docker": null,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/notebooks/test.py",
+    "codePath": "test.py",
+    "host": "ee60320ba8ba",
+    "username": "root",
+    "executable": "/bin/python3.9"
+}
