@@ -1,0 +1,136 @@
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:445: LightningDeprecationWarning: Setting `Trainer(gpus=0)` is deprecated in v1.7 and will be removed in v2.0. Please use `Trainer(accelerator='gpu', devices=0)` instead.
+  rank_zero_deprecation(
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/callbacks/model_checkpoint.py:616: UserWarning: Checkpoint directory /home/notebooks/checkpoints/{epoch:d} exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+  | Name    | Type      | Params
+--------------------------------------
+0 | layer_1 | Conv2d    | 224
+1 | layer_2 | Conv2d    | 1.2 K
+2 | layer_3 | Conv2d    | 4.6 K
+3 | maxpool | MaxPool2d | 0
+4 | relu    | ReLU      | 0
+5 | flatten | Flatten   | 0
+6 | fc1     | Linear    | 65.7 K
+7 | fc2     | Linear    | 1.3 K
+--------------------------------------
+73.0 K    Trainable params
+0         Non-trainable params
+73.0 K    Total params
+0.292     Total estimated model params size (MB)
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/trainer/connectors/data_connector.py:219: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/trainer/connectors/data_connector.py:219: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+
+
+
+
+
+
+
+
+Epoch 1:   0%|▏                                                                                                                               | 3/1564 [00:00<00:15, 98.29it/s, loss=1.39, v_num=njbv]
+
+
+
+
+
+
+
+
+
+Epoch 2:   2%|██▎                                                                                                                            | 28/1564 [00:00<00:16, 94.43it/s, loss=1.29, v_num=njbv]
+
+
+
+
+
+
+
+
+Epoch 2:  89%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████▋             | 1398/1564 [00:16<00:01, 86.74it/s, loss=1.11, v_num=njbv]
+
+
+
+
+
+
+
+
+
+Epoch 4:   1%|▋                                                                                                                               | 8/1564 [00:00<00:15, 98.44it/s, loss=1.07, v_num=njbv]
+
+
+
+
+
+
+
+Epoch 4:  91%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉           | 1425/1564 [00:16<00:01, 87.58it/s, loss=0.993, v_num=njbv]
+Validation DataLoader 0:  11%|███████████████▎                                                                                                                      | 18/157 [00:00<00:00, 179.31it/s]
+
+
+
+
+
+
+
+
+Epoch 5:  97%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌   | 1520/1564 [00:16<00:00, 90.42it/s, loss=0.973, v_num=njbv]
+Validation DataLoader 0:  76%|█████████████████████████████████████████████████████████████████████████████████████████████████████▋                               | 120/157 [00:00<00:00, 164.19it/s]
+
+
+
+
+
+
+
+
+Epoch 6:  87%|████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                | 1358/1564 [00:15<00:02, 85.28it/s, loss=1.05, v_num=njbv]
+
+
+
+
+
+
+
+
+
+Epoch 7:  89%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▏             | 1390/1564 [00:16<00:02, 85.70it/s, loss=0.989, v_num=njbv]
+
+
+
+
+
+
+
+
+Epoch 8:  97%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌   | 1520/1564 [00:17<00:00, 89.19it/s, loss=0.907, v_num=njbv]
+Validation DataLoader 0:  75%|███████████████████████████████████████████████████████████████████████████████████████████████████▉                                 | 118/157 [00:00<00:00, 163.64it/s]
+
+
+
+
+
+
+
+
+Epoch 9:  89%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▉              | 1387/1564 [00:15<00:02, 87.18it/s, loss=0.939, v_num=njbv]
+Epoch 9, global step 14070: 'val_acc' reached 0.60160 (best 0.60260), saving model to '/home/notebooks/checkpoints/{epoch:d}/epoch=9-step=14070.ckpt' as top 5
+`Trainer.fit` stopped: `max_epochs=10` reached.
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/trainer/trainer.py:1385: UserWarning: `.test(ckpt_path=None)` was called without a model. The best model of the previous `fit` call will be used. You can pass `.test(ckpt_path='best')` to use the best model or `.test(ckpt_path='last')` to use the last model. If you pass a value, this warning will be silenced.
+  rank_zero_warn(
+Restoring states from the checkpoint path at /home/notebooks/checkpoints/{epoch:d}/epoch=7-step=11256.ckpt
+Loaded model weights from checkpoint at /home/notebooks/checkpoints/{epoch:d}/epoch=7-step=11256.ckpt
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/trainer/connectors/data_connector.py:219: PossibleUserWarning: The dataloader, test_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+Epoch 9: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1564/1564 [00:17<00:00, 91.15it/s, loss=0.887, v_num=njbv]
+Testing DataLoader 0: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 313/313 [00:01<00:00, 164.91it/s]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃[1m        Test metric        [22m┃[1m       DataLoader 0        [22m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│[36m         test_acc          [39m│[35m    0.6057999730110168     [39m│
+│[36m         test_loss         [39m│[35m    1.0972461700439453     [39m│

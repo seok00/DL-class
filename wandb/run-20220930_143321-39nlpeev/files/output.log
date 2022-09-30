@@ -1,0 +1,31 @@
+Sanity Checking DataLoader 0:   0%|                                                                                                                                             | 0/2 [00:00<?, ?it/s]tensor([[0.2859, 0.2875, 0.2671,  ..., 0.2002, 0.1899, 0.2192],
+        [0.1768, 0.1767, 0.0619,  ..., 0.1671, 0.1562, 0.1861],
+        [0.1053, 0.1466, 0.1888,  ..., 0.1842, 0.1980, 0.2136],
+        ...,
+        [0.1382, 0.1252, 0.1307,  ..., 0.1678, 0.1873, 0.2046],
+        [0.1866, 0.2204, 0.2531,  ..., 0.2489, 0.2545, 0.2530],
+        [0.2721, 0.2852, 0.3038,  ..., 0.1881, 0.1701, 0.2987]])
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:445: LightningDeprecationWarning: Setting `Trainer(gpus=0)` is deprecated in v1.7 and will be removed in v2.0. Please use `Trainer(accelerator='gpu', devices=0)` instead.
+  rank_zero_deprecation(
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/callbacks/model_checkpoint.py:616: UserWarning: Checkpoint directory /home/notebooks/checkpoints/{epoch:d} exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+  | Name    | Type      | Params
+--------------------------------------
+0 | layer_1 | Conv2d    | 224
+1 | layer_2 | Conv2d    | 1.2 K
+2 | layer_3 | Conv2d    | 4.6 K
+3 | maxpool | MaxPool2d | 0
+4 | relu    | ReLU      | 0
+5 | flatten | Flatten   | 0
+6 | fc1     | Linear    | 16.5 K
+7 | fc2     | Linear    | 1.3 K
+--------------------------------------
+23.8 K    Trainable params
+0         Non-trainable params
+23.8 K    Total params
+0.095     Total estimated model params size (MB)
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/trainer/connectors/data_connector.py:219: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.

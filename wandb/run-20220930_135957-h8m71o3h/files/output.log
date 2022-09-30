@@ -1,0 +1,19 @@
+
+Sanity Checking DataLoader 0:   0%|                                                                                                                                             | 0/2 [00:00<?, ?it/s]
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:445: LightningDeprecationWarning: Setting `Trainer(gpus=0)` is deprecated in v1.7 and will be removed in v2.0. Please use `Trainer(accelerator='gpu', devices=0)` instead.
+  rank_zero_deprecation(
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/callbacks/model_checkpoint.py:616: UserWarning: Checkpoint directory /home/notebooks/checkpoints/{epoch:d} exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+  | Name  | Type       | Params
+-------------------------------------
+0 | model | Sequential | 99.7 K
+-------------------------------------
+99.7 K    Trainable params
+0         Non-trainable params
+99.7 K    Total params
+0.399     Total estimated model params size (MB)
+/usr/local/lib/python3.9/dist-packages/pytorch_lightning/trainer/connectors/data_connector.py:219: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
